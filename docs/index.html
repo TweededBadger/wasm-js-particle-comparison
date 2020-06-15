@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WASM/JS Particle Comparison</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+
+    <div class="flex mb-4 max-w-screen-lg mx-auto">
+      <div class="w-2/3 p-3">
+        <canvas id="demo-canvas"></canvas>
+      </div>
+      <div class="w-1/3 p-3">
+        <h1>WebAssembly/JS Particle system comparison</h1>
+        <p>
+          Comparison of a simple particle system between WebAssembly (compiled from Rust) and Javascript.
+        </p>
+        <p>"Run Benchmark" will run a local benchmark to compare the 2 particle systems.</p>
+        <p>Use the "Toggle" button to switch between WebAssembly and Javascript</p>
+        <p>View the source <a href="https://github.com/TweededBadger/wasm-js-particle-comparison/">here</a></p>
+        <button id="start-btn" class="btn w-full mb-3">Start</button>
+        <button id="toggle-btn" class="btn w-full mb-3">Toggle (Currently using Wasm)</button>
+        <button id="bench-btn" class="btn w-full mb-3">Run Benchmark</button>
+        <pre id="debug"></pre>
+      </div>
+    </div>
+
+    <script src="./bundle.min.js"></script>
+  </body>
+</html>
