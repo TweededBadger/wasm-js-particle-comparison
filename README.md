@@ -1,5 +1,7 @@
 # WebAssembly/JS Particle system comparison
 
+View this in action here: https://tweededbadger.com/wasm-js-particle-comparison/
+
 ## To start
  - `cd www`
  - `yarn`
